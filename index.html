@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Name Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background Shapes -->
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+    <div class="background-shape shape-3"></div>
+
+    <div class="container">
+        <div class="card animate-up">
+            <header class="animate-fade-in" style="animation-delay: 0.2s;">
+                <div class="flag-wrapper">
+                    <div class="japan-flag"></div>
+                </div>
+                <h1>මොකක්ද ඔයාගේ <br> <span class="highlight">ජපන් නම?</span></h1>
+                <p>Convert your name to Japanese Katakana style</p>
+            </header>
+
+            <main class="animate-fade-in" style="animation-delay: 0.4s;">
+                <div class="input-group">
+                    <label for="nameInput">Enter your English Name</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="nameInput" placeholder="e.g. Kasun Perera" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-header">
+                        <span class="label">Result</span>
+                        <button id="speakBtn" title="Listen">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <h2 id="output">---</h2>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
